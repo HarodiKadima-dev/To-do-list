@@ -4,15 +4,25 @@
 <head>
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="stylr.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css"/>
   <title>tarefas</title>
 </head>
 <body>
-  <h2>Lista de tarefas</h2>
-  <div class="todo-container">
-    <input type="text" id="taskInput" placeholder="Adicionar Tarefa">
-    <button onclick="addTask()">Adicionar</button>
-    <ul id="taskList"></ul>
+  <h1>
+  <i class="fa-solid fa-list-check"></i>
+  Gestor de tarefas
+</h1>
+  <div class="container">
+    <input type="text" id="pesquisar" placeholder="Pesquisar tarefa...">
+    <input type="text" id="addTarefa" placeholder="Adicionar tarefa">
+    <button type="submit" id="addButton">Adicionar</button>
+    <ul id="mostrarTarefa"></ul>
+    <div class="controle">
+    <button type="submit" id="todas">Todas</button>
+    <button type="submit" id="pendentes">Pendentes</button>
+    <button type="submit" id="concluidas">Concluidas</button>
+  </div>
   </div>
   <script src="scripts.js"></script>
 </body>
